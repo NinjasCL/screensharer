@@ -1,0 +1,36 @@
+# Screen Sharer
+
+Is a common problem in chilean public institutions (and many other places) that you have to be on site to take your turn and wait there until your number is reached (and you can lost your turn if you don't arrive on time).
+
+
+Many of these institutions have a turn based computer software similar to this one.
+
+image:https://user-images.githubusercontent.com/292738/83366600-2890b380-a37e-11ea-9b82-841c71e3123a.jpeg[]
+
+The problem is that you cannot access that information outside the designated location.
+
+This software is a simple solution to that specific problem. Takes an screenshot of the computer screen and share it on a website, refreshed every 15 seconds.
+
+You still need to be present to take your number, but at least you can see the current status and not be required to be on site if your number is far to be reached.
+
+## Installation
+
+`npm install`
+
+## Run
+
+`npm start`
+
+Recommended to use https://github.com/foreversd/forever[Forever].
+
+## Workflow
+
+- Install and Run the server (In the computer that shows the turn numbers).
+- Configure the access to the computer so it can be reached outside localhost. (Configure routers and have a public ip, default port is _3000_). Maybe using ssh tunneling with https://ngrok.com/[Ngrok] or similar tools.
+- Share the website using a https://en.wikipedia.org/wiki/QR_code[Qr Code].
+- Now people can go to the website and see the numbers with a simple screenshot.
+
+
+++++
+Made with <i class="fa fa-heart">&#9829;</i> by <a href="http://ninjas.cl" target="_blank">Ninjas.cl</a>.
+++++
